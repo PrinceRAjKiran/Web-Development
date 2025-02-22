@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>contact</title>
+    <link rel="stylesheet" href="assests\main.css" />
+    <style>
+      .hero {
+        border: 2px solid red;
+        margin-top: 80px;
+        color: white;
+        background: linear-gradient(purple, blue);
+        height: 80vh;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid yellow; */
+        padding-top: 20px;
+        width: device-width;
+        height: 100%;
+      }
+      .form h1 {
+        /* border: 2px solid red; */
+        margin: 0 25px;
+        padding: 10px 0;
+        width: auto;
+        text-align: center;
+        font-size: 45px;
+        font-weight: bolder;
+        color: #fff;
+      }
+      .form form {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: 0 40px;
+      }
+
+      .form_cont {
+        padding: 5px;
+        /* border: 2px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      label {
+        /* border: 2px solid red; */
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bolder;
+      }
+
+      input{
+        padding: 10px;
+        border: 2px solid black;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 385px;
+      }
+      textarea{
+        padding: 10px;
+        border: 2px solid black;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 385px;
+      }
+
+      .form_cont button {
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-left: 48px;
+        font-size: large;
+        font-weight: bolder;
+        background: linear-gradient(to right, red, yellow, orange);
+        width: 325px;
+        /* color: white; */
+      }
+      .form_cont  button:hover {
+        cursor: pointer;
+        background: linear-gradient(to left, red, yellow, orange);
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEjLGhM9Y7vRC1GECl1zEpbYybJPUtE3TK_pF1pmja1bAyo74HMKM0R9Pvmt8EaMdZixuY2q07XYRCCuas8lb-pgqKpsJPqe6gVLMfYdZjOTgge6fOCBXZVenZdP6Froa2lv-Z8VmALUSjTzOHpP_GoyBU0dyGz8HheRVzJr0Tg6pN1BI0AZq58NgSGk3w=s16000"
+        alt="logo"
+      />
+      <nav id="navbar">
+        <ul>
+          <li><a href="/index.html">home</a></li>
+          <li><a href="/project/blog.html">blog</a></li>
+          <li><a href="/project/contact.html">contact us</a></li>
+          <li><a href="/project/about.html">about me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="form">
+        <h1>Contact Us</h1>
+        <form action="https://formspree.io/f/mvgzlpgo" method="POST">
+          <div class="form_cont">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form_cont">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form_cont">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form_cont">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/hubptech/"
+            ><img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEi6bwAYRJy4O_rjERpDoGoqWxNF4kS55yP1l03Unx07RETCN1_TBph0U9nlHdLTSwJeWmqKvZ5M4XDaggFBlS3pUHwieUMc17ap9-C6ICjfrJ6synn2cW-M271xZnMayQKjQzoKe9i_xPA5QWaMotBLCeo6GGmode8E-feT3L4M48ZAuVAmd-s799aqzA=s16000"
+              alt="instagram"
+          /></a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/c/PTECHHUB/"
+            ><img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEiRgJv0W8BH2XHgvPxnDCgALO3KSzhDUWvVm5eJn4cw_f6Pc0kD-R3rGmSxebAS6JnkDa2uQpZSdJsGfEgRG-0ZBRkK8VzWsBNE-FcZberI2BdBffs5FMjhcyVdUHJYiBTvrD6IrOlW7OCNdv8rp1Lp0CWo_ShUZg8kz6_RVpOh0LzgEnJbl4ouPQQglw=s32"
+              alt="youtube"
+          /></a>
+        </li>
+        <li>
+          <a href="https://ptechhubofficial.blogspot.com/"
+            ><img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEjw5-Q2zVX-kqYUWZ71feEJlxfvl1yLrMwaAHMX4FtplnUixORPcFLoDWPzwO5ZvPMTcwBRVyhhCcYYDhA9-zDzxwryJyZHbsHt6ED4mOlDGdJNkoHpUfM6ZaKkr8_TebdXYI0-r2jM9LMvnCkuYjEVMNXRyZ1dXO2IdjEZqNk1JKmh3jPFvlwaKGvKAg=s16000"
+              alt="chrome"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/ptech.hub.1/"
+            ><img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEj77UlovZHqjtNg4XJUCrUwfteez1pjKNTkBdAaSYTKI12kKGesc2wtbcH_amdDF0WnR8cPLg0E-53TrgXyasyPCEdKQ1_-l7BwXIiVGr2RxHXBciejqeVAHNljsabyuhWC45ATMrp5RhEoii0FTU10WGgCz1nWVWlkO5NGFSpOB7xV7yT4hpaNxR9WYQ=s16000"
+              alt="youtube"
+          /></a>
+        </li>
+        <li>
+          <a href="https://t.me/joinchat/Ix6Q2o_JGg2PQjFz/"
+            ><img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEg6Rvs3fUeOXx024_TL9K7FO3xAA_fuMnyN-0rQ6bGwrcItYB6Z8VXt_WX4lz9DR_CieN-AFzqZXJpz4PbYBp3Wc2FHTjpdt2wqn6FEwdoUbcngcnEt0DshabzM2YB8zJKdWHM43cJSqpqGesllDeEad5JObs45CnyRGz9R0gSXkEM1qdZNgrusqI6m5w=s16000"
+              alt="youtube"
+          /></a>
+        </li>
+      </ul>
+      <h1>P-Tech Hub &copy 2024-2025</h1>
+    </footer>
+  </body>
+</html>
